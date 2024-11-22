@@ -9,6 +9,7 @@
   <div class="container">
     <h1>24hr World Clock</h1>
 
+    <!--  UPDATE CITIES: my favourite cities-->
     <select name="" id="select-city">
       <option value="">Select a city</option>
       <option value="">tbc</option>
@@ -18,40 +19,81 @@
       <option value="">tbc</option>
     </select>
 
+    <!--  UPDATE search: could add ' search a city' form -->
+
     <div class="current">
-      Your current location and time: London, Friday 22nd November 2024, 15:37
+      Your current location and time:
+      <br />
+      London, Friday 22nd November 2024, 15:37
     </div>
 
-    <div class="city">
-      <h2>London</h2>
-      <div class="date">Friday 22nd November 2024</div>
-      <div class="time">15:37</div>
-      <div class="temperature">☀️ H: 10°C / L: 3°C</div>
+    <!--  UPDATE CITIES: 2 with time zones behind GMT and 3 ahead-->
+    <div class="city-grid">
+      <div class="city">
+        <h2>London</h2>
+        <div>🇬🇧</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
+
+      <div class="city">
+        <h2>Paris</h2>
+        <div>🇫🇷</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
+
+      <div class="city">
+        <h2>New York</h2>
+        <div>🇺🇸</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
+
+      <div class="city">
+        <h2>Sydney</h2>
+        <div>🇳🇿</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
+
+      <div class="city">
+        <h2>Moscow</h2>
+        <div>🇷🇺</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
+
+      <div class="city">
+        <h2>Bangkok</h2>
+        <div>🇮🇳</div>
+        <div class="time">15:37:09</div>
+        <div class="date">Fri 22nd Nov 2024</div>
+        <div class="temperature">☀️ H:10°C / L:3°C</div>
+      </div>
     </div>
 
-    <div class="city">
-      <h2>Paris</h2>
-      <div class="date">Friday 22nd November 2024</div>
-      <div class="time">15:37</div>
-      <div class="temperature">🌦 H: 15°C / L: 11°C</div>
-    </div>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://github.com/IzzyTrott" target="_blank">Izzy Trott</a>,
+        is
+        <a href="https://github.com/IzzyTrott/24hr-world-clock" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://it-24hr-world-clock.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >
+        👩🏼‍💻
+      </p>
+    </footer>
   </div>
-
-  <footer>
-    <p>
-      This project was coded by
-      <a href="https://github.com/IzzyTrott" target="_blank">Izzy Trott</a>, is
-      <a href="https://github.com/IzzyTrott/24hr-world-clock" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://it-24hr-world-clock.netlify.app" target="_blank"
-        >hosted on Netlify</a
-      >
-      👩🏼‍💻
-    </p>
-  </footer>
-
   <body>
     <script src="javascript/index.js"></script>
   </body>
