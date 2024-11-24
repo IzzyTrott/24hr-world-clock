@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>24hr world clock</title>
   </head>
   <div class="container">
@@ -21,60 +23,53 @@
 
     <!--  UPDATE search: could add ' search a city' form -->
 
-    <div class="current">
+    <div class="current" id="current">
       Your current location and time:
-      <br />
-      London, Friday 22nd November 2024, 15:37
+      <div id="current-timezone">London, Friday 22nd November 2024, 15:37</div>
     </div>
 
     <!--  UPDATE CITIES: 2 with time zones behind GMT and 3 ahead-->
     <div class="city-grid">
-      <div class="city">
+      <div class="city" id="london">
         <h2>London</h2>
         <div>🇬🇧</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="paris">
         <h2>Paris</h2>
         <div>🇫🇷</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="new-york">
         <h2>New York</h2>
         <div>🇺🇸</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="sydney">
         <h2>Sydney</h2>
         <div>🇳🇿</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="moscow">
         <h2>Moscow</h2>
         <div>🇷🇺</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="bangkok">
         <h2>Bangkok</h2>
         <div>🇮🇳</div>
-        <div class="time">15:37:09</div>
-        <div class="date">Fri 22nd Nov 2024</div>
-        <div class="temperature">☀️ H:10°C / L:3°C</div>
+        <div class="time"></div>
+        <div class="date"></div>
       </div>
     </div>
 
