@@ -36,7 +36,6 @@ select {
   margin: 10px auto;
 }
 
-
 .city-grid {
   text-align: center;
   display: grid;
@@ -61,10 +60,11 @@ h2 {
   font-size: 15px;
   padding: 5px;
 }
-
-.temperature {
-  font-size: 12px;
-  padding: 5px;
+.update-city-grid {
+  margin: 0 auto;
+  background-color: rgb(255, 240, 245, 0.7);
+  border-radius: 5px;
+  display: contents;
 }
 
 footer {

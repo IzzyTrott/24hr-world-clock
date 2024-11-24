@@ -11,14 +11,12 @@
   <div class="container">
     <h1>24hr World Clock</h1>
 
-    <!--  UPDATE CITIES: my favourite cities-->
     <select name="" id="select-city">
       <option value="">Select a city</option>
-      <option value="">tbc</option>
-      <option value="">tbc</option>
-      <option value="">tbc</option>
-      <option value="">tbc</option>
-      <option value="">tbc</option>
+      <option value="Europe/Stockholm">Stockholm</option>
+      <option value="America/Los_Angeles">Los Angeles</option>
+      <option value="Pacific/Auckland">Auckland</option>
+      <option value="Pacific/Honolulu">Honolulu</option>
     </select>
 
     <!--  UPDATE search: could add ' search a city' form -->
@@ -28,8 +26,7 @@
       <div id="current-timezone">London, Friday 22nd November 2024, 15:37</div>
     </div>
 
-    <!--  UPDATE CITIES: 2 with time zones behind GMT and 3 ahead-->
-    <div class="city-grid">
+    <div class="city-grid" id="cities">
       <div class="city" id="london">
         <h2>London</h2>
         <div>🇬🇧</div>
