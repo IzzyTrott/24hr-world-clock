@@ -59,8 +59,20 @@ function updateCity(event) {
         <div class="date">${cityTime.format("ddd Do MMM YYYY")}</div>
       </div>`;
 }
+
+function showCurrentCity() {
+  let currentCityElement = document.querySelector("#current-timezone");
+  let currentCity = moment.tz.guess();
+  let currentCityName = currentCity.replace("_", " ").split("/")[1];
+  currentCityElement.innerHTML = `${currentCityName}, ${moment().format(
+    "dddd Do MMMM YYYY, HH:mm:ss"
+  )}`;
+}
+
 let citiesSelectElement = document.querySelector("#select-city");
 citiesSelectElement.addEventListener("change", updateCity);
 
 displayCities();
 setInterval(displayCities, 1000);
+showCurrentCity();
+setInterval(showCurrentCity, 1000);
