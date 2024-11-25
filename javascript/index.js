@@ -57,7 +57,8 @@ function updateCity(event) {
         <div><h2> ${cityName}</h2></div>
         <div class="time">${cityTime.format("HH:mm:ss")}</div>
         <div class="date">${cityTime.format("ddd Do MMM YYYY")}</div>
-      </div>`;
+      </div>
+      <a href="https://it-24hr-world-clock.netlify.app/">Back to homepage</>`;
 }
 
 function showCurrentCity() {
